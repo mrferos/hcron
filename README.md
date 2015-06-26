@@ -13,7 +13,4 @@ Will output
 11:00 every day the process "php /var/www/lto/module/LtoEngine/jobs/ach-returns.php" will run
 ```
 
-```bash
-hcron
-```
-Will read the output of "crontab -l | grep -v \#" (the grep -v part is to remove commented out cron jobs) and output all cronjobs in a human readable format.
+Just executing `hcron` will read the output of "crontab -l | grep -v \#" (the grep -v part is to remove commented out cron jobs) and output all cronjobs in a human readable format.
