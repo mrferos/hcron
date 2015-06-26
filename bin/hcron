@@ -10,6 +10,10 @@ var translateCronLine = function(cronLine) {
     pieces = cronLine.split(' ');
     cronLine = pieces.splice(0, 5).join(' ');
     whenRun = prettycron.toString(cronLine);
+    if (pieces.join('') == '') {
+        return false;    
+    }
+
     return whenRun + ' the process "' + pieces.join(' ') + '" will run';
 }
 
@@ -22,7 +26,10 @@ if (argsv._.length == 0) {
 
         lines = stdout.split("\n");
         for (i in lines) {
-            console.log(translateCronLine(lines[i]));
+            message = translateCronLine(lines[i]);
+            if (false != message) {
+                console.log(message);    
+            }
         }
     });
 } else if (argsv._.length == 1) {
