@@ -17,6 +17,11 @@ Just executing `hcron` will read the output of "crontab -l | grep -v \#" (the gr
 
 ## Installation:
 
+### Through NPM:
+npm install -g hcron
+
+### Through git
+
 Clone the repo to your home directory. Navigate to the directory & run:
 
 ```bash
