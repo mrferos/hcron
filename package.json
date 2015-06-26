@@ -1,0 +1,17 @@
+{
+    "name": "hcron",
+    "version": "0.1.0",
+    "description": "Making crontab human readable",
+    "author": "Andres Galindo <me@andresgalindo.us>",
+    "bin": {
+        "hcron": "./bin/hcron"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git@github.com:mrferos/hcron.git"
+    },
+    "dependencies": {
+        "prettycron": "0.10.*",
+        "yargs": "3.13.0"
+    }
+}
