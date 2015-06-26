@@ -14,3 +14,12 @@ Will output
 ```
 
 Just executing `hcron` will read the output of "crontab -l | grep -v \#" (the grep -v part is to remove commented out cron jobs) and output all cronjobs in a human readable format.
+
+## Installation:
+
+Clone the repo to your home directory. Navigate to the directory & run:
+
+```bash
+sudo npm install
+ln -s ~/hcron/bin/hcron /usr/local/bin/hcron
+```
