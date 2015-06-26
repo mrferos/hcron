@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "description": "Making crontab human readable",
     "author": "Andres Galindo <me@andresgalindo.us>",
+    "preferGlobal": "true",
     "bin": {
         "hcron": "./bin/hcron"
     },
